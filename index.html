@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkulyator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-    #calculator-form {
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: 300px;
-      text-align: left;
-    }
-    input[type="number"], select {
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    #result {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Kalkulyator</h1>
-  <form id="calculator-form">
-    <input type="number" id="num1" placeholder="Birinchi sonni kiriting" required>
-    <select id="operator">
-      <option value="+">+</option>
-      <option value="-">-</option>
-      <option value="*">*</option>
-      <option value="/">/</option>
-      <option value="**">**</option>
-    </select>
-    <input type="number" id="num2" placeholder="Ikkinchi sonni kiriting" required>
-    <button type="submit">Hisobla</button>
-  </form>
-  <div id="result"></div>
 
-  <script src="app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulyator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #calculator-form {
+            border: solid 1px #4c6daf;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="number"],
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #4c6daf;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4c6daf;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kalkulyator</h1>
+    <form id="calculator-form">
+        <input type="number" id="num1" placeholder="Birinchi sonni kiriting" required>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="**">**</option>
+        </select>
+        <input type="number" id="num2" placeholder="Ikkinchi sonni kiriting" required>
+        <button type="submit">Hisobla</button>
+        <div id="result"></div>
+    </form>
+
+    <script src="app.js"></script>
 </body>
+
 </html>

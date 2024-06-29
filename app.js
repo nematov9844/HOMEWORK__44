@@ -50,58 +50,58 @@ function calculator(num1, num2, operator) {
 
 
 
-let num = prompt("Son kiriting:");
+// let num = prompt("Son kiriting:");
 
-if (num > 0) {
-  num--;
-  console.log(`Yangi qiymat: ${num}`);
-} else if (num < 0) {
-  num++;
-  console.log(`Yangi qiymat: ${num}`);
-} else {
-  console.log(`Kiritilgan son 0 ga teng`);
-}
+// if (num > 0) {
+//   num--;
+//   console.log(`Yangi qiymat: ${num}`);
+// } else if (num < 0) {
+//   num++;
+//   console.log(`Yangi qiymat: ${num}`);
+// } else {
+//   console.log(`Kiritilgan son 0 ga teng`);
+// }
 
 
-const reverseNumber = (num) => {
-    if (num >= 10 && num <= 99) {
-      const reversedNum = parseInt(num.toString().split('').reverse().join(''));
-      return reversedNum;
-    } else {
-      return "Kiritilgan son 2 xonali emas!";
-    }
-  };
+// const reverseNumber = (num) => {
+//     if (num >= 10 && num <= 99) {
+//       const reversedNum = parseInt(num.toString().split('').reverse().join(''));
+//       return reversedNum;
+//     } else {
+//       return "Kiritilgan son 2 xonali emas!";
+//     }
+//   };
   
-  console.log(reverseNumber(42)); 
-  console.log(reverseNumber(123)); 
-  
-
-  const reverseNumber2 = (num) => {
-    if (num >= 100 && num <= 999) {
-      const reversedNum = parseInt(num.toString().split('').reverse().join(''));
-      return reversedNum;
-    } else {
-      return "Kiritilgan son 3 xonali emas!";
-    }
-  };
-  
-  console.log(reverseNumber2(456)); 
-  console.log(reverseNumber2(42));
+//   console.log(reverseNumber(42)); 
+//   console.log(reverseNumber(123)); 
   
 
-  function studentStatus(grade) {
-    if (grade >= 70 && grade <= 100) {
-      return "Budjet";
-    } else if (grade >= 50 && grade < 70) {
-      return "Contract";
-    } else if (grade >= 0 && grade < 50) {
-      return "Yiqildi";
-    } else {
-      return "Noto'g'ri baho kiritildi!";
-    }
-  }
+//   const reverseNumber2 = (num) => {
+//     if (num >= 100 && num <= 999) {
+//       const reversedNum = parseInt(num.toString().split('').reverse().join(''));
+//       return reversedNum;
+//     } else {
+//       return "Kiritilgan son 3 xonali emas!";
+//     }
+//   };
   
-  let studentGrade = prompt("Student bahosini kiriting (0-100):");
-  let status = studentStatus(studentGrade);
-  console.log(`Student mavqei: ${status}`);
+//   console.log(reverseNumber2(456)); 
+//   console.log(reverseNumber2(42));
+  
+
+//   function studentStatus(grade) {
+//     if (grade >= 70 && grade <= 100) {
+//       return "Budjet";
+//     } else if (grade >= 50 && grade < 70) {
+//       return "Contract";
+//     } else if (grade >= 0 && grade < 50) {
+//       return "Yiqildi";
+//     } else {
+//       return "Noto'g'ri baho kiritildi!";
+//     }
+//   }
+  
+//   let studentGrade = prompt("Student bahosini kiriting (0-100):");
+//   let status = studentStatus(studentGrade);
+//   console.log(`Student mavqei: ${status}`);
   
